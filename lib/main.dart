@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:screen/card.dart';
+import 'package:screen/cards.dart';
 import 'package:screen/screens/home.dart';
 import 'package:screen/screens/second.dart';
 import 'package:screen/widgets/tab_bar.dart';
@@ -11,8 +11,6 @@ void main() {
 
 class MyApp extends StatelessWidget {
   MyApp({Key? key}) : super(key: key);
-
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
@@ -21,7 +19,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: Second(),
+        home: Home(),
       ),
     );
   }
